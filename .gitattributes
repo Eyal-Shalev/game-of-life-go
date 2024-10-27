@@ -1,0 +1,3 @@
+*                     text=auto
+*.{go,js,html,css}    text eol=lf
+go.{mod,sum}          text eol=lf
