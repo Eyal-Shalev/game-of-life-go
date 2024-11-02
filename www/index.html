@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="/ress.css">
     <link rel="stylesheet" href="/bulma.css">
     <link rel="stylesheet" href="/main.css">
+    <script type="module" src="/app.js"></script>
+    <script src="/main.js"></script>
 </head>
 <body>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item" target="app" href="/app.html">Random</a>
-            <a class="navbar-item" target="app"
-               href="/app.html?rows=20&init_state=AAAAAIAAAAACgAAADAwAMAARDAAwwCCMAADAIsKAAAAggIAAABEAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=">
+            <a class="navbar-item" href="/">Random</a>
+            <a class="navbar-item"
+               href="/?rows=20&init_state=AAAAAIAAAAACgAAADAwAMAARDAAwwCCMAADAIsKAAAAggIAAABEAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=">
                 Gospel Glider Gun
             </a>
         </div>
@@ -23,7 +25,8 @@
 </nav>
 
 <section class="section">
-    <iframe name="app" class="container app" src="/app.html"></iframe>
+<!--    <iframe name="app" class="container app" src="/app.html"></iframe>-->
+    <game-of-life-viewer></game-of-life-viewer>
 </section>
 
 
